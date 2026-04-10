@@ -46,10 +46,10 @@ const receiveMessageABI = `[{
 func main() {
 	flag.Parse()
 
-	//if *targetRPC == "" || *targetContract == "" || *privateKeyHex == "" || *emitterAddr == "" {
-	//	flag.Usage()
-	//	log.Fatal("missing required flags: -rpc -contract -key -emitter-addr")
-	//}
+	if *targetRPC == "" || *targetContract == "" || *privateKeyHex == "" || *emitterAddr == "" {
+		flag.Usage()
+		log.Fatal("missing required flags: -rpc -contract -key -emitter-addr")
+	}
 
 	emitter := normalizeEmitter(*emitterAddr)
 	log.Printf("Relayer started | guardian=%s chain=%d emitter=%s startSeq=%d",

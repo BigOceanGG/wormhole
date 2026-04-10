@@ -63,7 +63,7 @@ require (
 	github.com/prometheus/client_model v0.6.1
 	github.com/prometheus/common v0.60.0
 	github.com/wormhole-foundation/wormchain v0.0.0-00010101000000-000000000000
-	github.com/wormhole-foundation/wormhole/sdk v0.0.0-20220926172624-4b38dc650bb0
+	github.com/wormhole-foundation/wormhole/sdk v0.0.0-20260409140850-4e793d0b3df0
 	google.golang.org/genproto/googleapis/api v0.0.0-20230726155614-23370e0ffb3e
 	nhooyr.io/websocket v1.8.7
 )

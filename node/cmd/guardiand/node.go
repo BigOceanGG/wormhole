@@ -645,8 +645,8 @@ func runNode(cmd *cobra.Command, args []string) {
 
 	// Refuse to run as root in production mode.
 	if env != common.UnsafeDevNet && os.Geteuid() == 0 {
-//		fmt.Println("can't run as uid 0")
-//		os.Exit(1)
+		//		fmt.Println("can't run as uid 0")
+		//		os.Exit(1)
 	}
 
 	// Set up logging. The go-log zap wrapper that libp2p uses is compatible with our
@@ -1312,13 +1312,13 @@ func runNode(cmd *cobra.Command, args []string) {
 	if shouldStart(bscRPC) {
 		bscIsGuardianSetChain := *ethContract == "" || *ethContract == "0x0000000000000000000000000000000000000000"
 		wc := &evm.WatcherConfig{
-			NetworkID:         "bsc",
-			ChainID:           vaa.ChainIDBSC,
-			Rpc:               *bscRPC,
+			NetworkID:              "bsc",
+			ChainID:                vaa.ChainIDBSC,
+			Rpc:                    *bscRPC,
 			Contract:               *bscContract,
 			GuardianSetUpdateChain: bscIsGuardianSetChain,
-			CcqBackfillCache:  *ccqBackfillCache,
-			TxVerifierEnabled: slices.Contains(txVerifierChains, vaa.ChainIDBSC),
+			CcqBackfillCache:       *ccqBackfillCache,
+			TxVerifierEnabled:      slices.Contains(txVerifierChains, vaa.ChainIDBSC),
 		}
 
 		watcherConfigs = append(watcherConfigs, wc)
