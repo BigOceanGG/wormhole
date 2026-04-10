@@ -1,0 +1,24 @@
+
+nodeName: "my-guardian-node"
+guardianKey: "/root/guardian.key"
+nodeKey: "/root/node.key"
+adminSocket: "/tmp/guardian-admin.sock"
+dataDir: "/root/guardian-data"
+
+bscRPC: "wss://bsc-testnet-rpc.publicnode.com"
+bscContract: "0x349a40B49C194Fec43F376Be0118b9B7C16e5a20"
+
+p2pBootstrap: ""
+  #p2pNetworkID: "/wormhole/mychain/1"
+p2pPort: 8999
+network: "/wormhole/devnet"
+disableTelemetry: true
+
+evmChainID: 97
+
+ethRPC: "wss://ethereum-rpc.publicnode.com"
+ethContract: "0x0000000000000000000000000000000000000000"
+
+publicWeb: "0.0.0.0:9000"
+publicGRPCSocket: "/tmp/guardian-public-grpc.sock"
+

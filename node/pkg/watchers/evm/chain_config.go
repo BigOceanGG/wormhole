@@ -115,7 +115,7 @@ var (
 	testnetChainConfig = EnvMap{
 		// As of 2025 September we use Sepolia as the default Ethereum testnet, given that Holesky is being deprecated.
 		vaa.ChainIDEthereum: {Finalized: true, Safe: true, EvmChainID: 11155111, PublicRPC: "https://ethereum-sepolia-rpc.publicnode.com", ContractAddr: "0x4a8bc80Ed5a4067f1CCf107057b8270E0cC11A78"},
-		vaa.ChainIDBSC:      {Finalized: true, Safe: true, EvmChainID: 97, PublicRPC: "https://bsc-testnet-rpc.publicnode.com", ContractAddr: "0x68605AD7b15c732a30b1BbC62BE8F2A509D74b4D"},
+		vaa.ChainIDBSC:      {Finalized: true, Safe: true, EvmChainID: 97, PublicRPC: "https://bsc-testnet-rpc.publicnode.com", ContractAddr: "0x349a40B49C194Fec43F376Be0118b9B7C16e5a20"},
 
 		// Polygon supports polling for finalized but not safe: https://forum.polygon.technology/t/optimizing-decentralized-apps-ux-with-milestones-a-significantly-accelerated-finality-solution/13154
 		vaa.ChainIDPolygon: {Finalized: true, Safe: false, EvmChainID: 80001, ContractAddr: "0x0CBE91CF822c73C2315FB05100C2F714765d5c20"}, // Polygon Mumbai is deprecated.
